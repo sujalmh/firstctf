@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CTF Challenge</h1>
+        <h2><div id="points-status">Total Points: <span id="total-points">0</span></div></h2>
+
+        <div id="challenges">
+            <div class="challenge" data-index="0">
+                <p class="question"><h2>WhatsApp Whisper (Miscellaneous: Easy)</h2>
+                    <h4>Points: 5</h4>
+                    Welcome to the "Cyber-security club @ MITE" WhatsApp group, where whispers of secrets abound. Our admin has left a clue to a hidden treasure right in the group. Can you uncover the secret?
+                    <br><br>Join the group if you haven't already: <a href="https://chat.whatsapp.com/JEvmFOPianG1lhpdPyvZek">Click here</a></p>
+                <input type="text" placeholder="Enter flag">
+                <button onclick="checkFlag(0)">Submit Flag</button>
+                <div class="result" id="result0"></div>
+            </div>
+
+
+            <div class="challenge" data-index="1">
+                <p class="question"><h2>Mystery's Maestro: A City's Detective (Reconnaissance: Easy)</h2>
+                    <h4>Points: 5</h4>
+                    No pipe, no cape, just brains on fire,<br>At 221B, truth's my choir.<br>Feelings? No time, puzzles to crack,<br>Villains in fear, leave justice in my wake.<br><br>
+                    Born from a quill, a mind of steel,<br>My gaze sees through, secrets reveal.<br>So tell me, friend, with keenest eye,<br>Who am I, London's logic-fueled fly?<br><br>Flag format: mite{Firstname_Lastname}</p>
+                <input type="text" placeholder="Enter flag">
+                <button onclick="checkFlag(1)">Submit Flag</button>
+                <div class="result" id="result1"></div>
+            </div>
+
+            <div class="challenge" data-index="2">
+                <p class="question"><h2>Cellular Cryptogram: Excel Edition (Forensics: Easy)</h2>
+                    <h4>Points: 10</h4>
+                    Welcome, cyber sleuth! You've obtained a mysterious Excel file with a seemingly innocuous exterior, but we suspect there's more than meets the eye. Your task is to employ your forensic skills to dissect the spreadsheet and reveal the hidden message.
+                    <br><br>Submit the decrypted text that you find, formatted as "mite{your_found_text_here}".
+                    <br><br>Download the file: 
+                    <a href="https://docs.google.com/spreadsheets/d/1ZriVxIfwCaG06yvUaQ5z5fNZloTzYVTd/edit?usp=sharing&ouid=113872478610310194907&rtpof=true&sd=true">Download here</a></p>
+                <input type="text" placeholder="Enter flag">
+                <button onclick="checkFlag(2)">Submit Flag</button>
+                <div class="result" id="result2"></div>
+            </div>
+
+            <div class="challenge" data-index="3">
+                <p class="question"><h2>Do You Know C (Programming: Easy)</h2>
+                   <h4>Points: 10</h4>
+                    Seeking to reclaim your CTF flag? Navigate the maze of C programs, crack the code, and unveil the hidden treasure with the prowess of a coding pirate! Argh, may your pointers be sharp and your bugs be but a whisper in the wind!
+                    <br><br>Download the file: <a href="https://drive.google.com/file/d/1rPn1XQkFztdTXxyGgiqF7cxc3sguMj7z/view?usp=sharing">Download here</a></p>
+                <input type="text" placeholder="Enter flag">
+                <button onclick="checkFlag(3)">Submit Flag</button>
+                <div class="result" id="result3"></div>
+            </div>
+
+            <div class="challenge" data-index="4">
+                <p class="question"><h2>Shifting Secrets (Cryptography: Medium)</h2>
+                    <h4>Points: 20</h4>
+                    In the realm of encryption, our cryptic maestro has played a tune of rotations. The flag '<tt>rnyj{wty_5_jshwduynts}</tt>' has been encrypted using the ROT cipher. <br>Can you shift through the notes and reveal the concealed message?
+                    <br><br>Flag format: mite{decrypted_message}</p>
+                <input type="text" placeholder="Enter flag">
+                <button onclick="checkFlag(4)">Submit Flag</button>
+                <div class="result" id="result4"></div>
+            </div>
+
+            <div class="challenge" data-index="5">
+                <p class="question"><h2>Digital Ripples: Decrypting 'ilatedilate' (OSINT: Medium)</h2>
+                    <h4>Points: 20</h4>
+                    Tap tiny circles, stories ignite,'ilatedilate', hidden in sight.Peek and explore, who's on the screen?Unravel the clues, what does it mean?</p>
+                <input type="text" placeholder="Enter flag">
+                <button onclick="checkFlag(5)">Submit Flag</button>
+                <div class="result" id="result5"></div>
+            </div>
+
+            <div class="challenge" data-index="6">
+                <p class="question"><h2>Club Entry (Web: Hard)</h2>
+                    <h4>Points: 30</h4>
+                    Welcome to our club login, guarded by encrypted gates. Your task is to find the hidden credentials and gain entry into the admin panel.
+                    <br><br>Access the page here: <a href="https://sujalmh.github.io/web-chall1/">https://sujalmh.github.io/web-chall1/</a></p>
+                <input type="text" placeholder="Enter flag">
+                <button onclick="checkFlag(6)">Submit Flag</button>
+                <div class="result" id="result6"></div>
+            </div>
+
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
